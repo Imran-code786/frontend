@@ -1,4 +1,4 @@
-FROM                docker.io/library/node:22
+FROM                docker.io/library/node:22 As builder
 WORKDIR             /app
 COPY               ./  /app/
 RUN                npm ci && npm run build
